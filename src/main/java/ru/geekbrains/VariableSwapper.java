@@ -8,27 +8,27 @@ public class VariableSwapper {
     }
 
     public static void swap1(int a, int b) {
-        System.out.print("a = " + a + ", b = " + b + "; ");
+        System.out.printf("a = %d, b = %d; ", a, b);
         int c = b;
         b = a;
         a = c;
-        System.out.println("a = " + a + ", b = " + b);
+        System.out.printf("a = %d, b = %d\n", a, b);
     }
 
     public static void swap2(int a, int b) {
-        System.out.print("a = " + a + ", b = " + b + "; ");
+        System.out.printf("a = %d, b = %d; ", a, b);
         a += b;
         b = a - b;
         a -= b;
-        System.out.println("a = " + a + ", b = " + b);
+        System.out.printf("a = %d, b = %d\n", a, b);
     }
 
     public static void swap3(int a, int b) {
-        System.out.print("a = " + a + ", b = " + b + "; ");
+        System.out.printf("a = %d, b = %d; ", a, b);
         a ^= b;
         b ^= a;
         a ^= b;
-        System.out.println("a = " + a + ", b = " + b);
+        System.out.printf("a = %d, b = %d\n", a, b);
     }
 }
 

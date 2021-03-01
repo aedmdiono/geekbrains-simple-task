@@ -20,11 +20,11 @@ public class Fibbonaccier {
         if (n < 3) {
             return 1;
         }
-        long previous = 1, next = 1, sum = 0;
+        long first = 1, second = 1, sum = 0;
         for (int i = 3; i <= n; i++) {
-            sum = previous + next;
-            previous = next;
-            next = sum;
+            sum = first + second;
+            first = second;
+            second = sum;
         }
         return sum;
     }

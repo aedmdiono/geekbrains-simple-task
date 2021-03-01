@@ -2,7 +2,6 @@ package ru.geekbrains;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class BullsCowsGame {
     public static void main(String[] args) {
@@ -34,7 +33,6 @@ public class BullsCowsGame {
 
     private int[] generateNum() {
         Random rnd = new Random();
-        IntStream ints = rnd.ints(10);
         int[] a = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         for (int i = 0; i < 100; i++) {
             int i1 = rnd.nextInt(10);
